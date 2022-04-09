@@ -1,1 +1,1 @@
-# fr.infinity.irc.bot.dupecheck
+# READ ME
