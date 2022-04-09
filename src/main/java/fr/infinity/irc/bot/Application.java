@@ -1,4 +1,4 @@
-package fr.infinity.irc.bot.oracle;
+package fr.infinity.irc.bot;
 
 import fr.infinity.irc.bot.oracle.service.BotService;
 import org.springframework.beans.factory.annotation.Autowired;
