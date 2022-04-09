@@ -1,0 +1,1 @@
+# fr.infinity.irc.bot.dupecheck
