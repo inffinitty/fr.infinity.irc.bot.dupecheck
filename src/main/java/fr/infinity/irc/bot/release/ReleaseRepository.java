@@ -17,4 +17,7 @@ public interface ReleaseRepository extends CrudRepository<Release, Long> {
     @Query("SELECT r FROM Release r WHERE r.team = :team ORDER BY r.pre_at ASC")
     List<Release> getActivity(@Param("team") String team);
 
+    @Query("SELECT r FROM Release r WHERE r.name = :release ORDER BY r.pre_at DESC")
+    List<Release> getLastRelease(@Param("release") String release, Pageable pageable);
+
 }
