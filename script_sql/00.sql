@@ -11,3 +11,11 @@ CREATE TABLE pre (
                      added_at timestamp NOT NULL DEFAULT current_timestamp,
                      pre_at timestamp NULL DEFAULT NULL
 );
+
+-- CREATE SEQUENCE FOR IDS
+CREATE SEQUENCE IF NOT EXISTS pre_id_seq
+    START 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
