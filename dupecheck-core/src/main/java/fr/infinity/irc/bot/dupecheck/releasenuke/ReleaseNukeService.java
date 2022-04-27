@@ -43,9 +43,9 @@ public class ReleaseNukeService {
     }
 
     private void save(String serverAlias, GenericMessageEvent event, String[] parsedString, ReleaseEtat etat) {
-        String releaseName = parsedString[2];
-        String commentary = parsedString[3];
-        String network = parsedString[4];
+        String releaseName = parsedString[1];
+        String commentary = parsedString[2];
+        String network = parsedString[3];
 
         Release release = this.releaseService.getRelease(new Release(releaseName));
         SiteFrom siteFrom = siteFromService.getFom(event, serverAlias);
